@@ -1,5 +1,5 @@
 
-![logo](documentation\locgi-logo-trans-small.png)
+![logo](documentation/locgi-logo-trans-small.png)
 
 # LocGi
 AI and LLM's are all the rage, but I wanted Private AI. Here's the problem, I don't want to spend tons on cloud-based infrastructure, and I don't have a spare machine.... but what I do have is a reasonably powerful gaming PC, built on Windows 10. It's prefect for AI.
@@ -9,14 +9,14 @@ LocGI is an attempt at bootstrapping a local, private AI instance on a modern Wi
 This repo contains scripts to help install, operate and maintain your local instance. 
 
 # Architecture
-![hosting architecture](documentation\host-architecture.png)
+![hosting architecture](documentation/host-architecture.png)
 
 LocGI's architecture is intended to keep all the key components on the same physical hardware, by making use of different layers of virtualisation.
 
 A host windows machine runs Ollama as backend service, and runs a VM (called LocGI) on virtualbox, which itself hosts front-end and API applications (OpenWeb UI and N8N). Those applications are further protected by Nginx as a reverse proxy, with TLS allowing for a reasonably secure setup which won't directly compromise your main gaming machine (host) in the event of cyber attack
 
 
-![service architecture](documentation\service-architecture.png)
+![service architecture](documentation/service-architecture.png)
 
 # Installation
  
