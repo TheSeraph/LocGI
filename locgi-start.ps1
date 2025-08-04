@@ -4,4 +4,4 @@
 . ./ollama-variables.ps1
 
 Get-Service -Name $serviceName | Start-Service
-VBoxManage startvm LocGI --type headless
+VBoxManage startvm $VMname --type headless

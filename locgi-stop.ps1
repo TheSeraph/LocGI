@@ -4,4 +4,4 @@
 . ./ollama-variables.ps1
 
 Get-Service -Name $serviceName | Stop-Service -Force
-VBoxManage controlvm LocGI poweroff
+VBoxManage controlvm $VMname poweroff

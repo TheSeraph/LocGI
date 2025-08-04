@@ -103,7 +103,4 @@ Write-Host ""
 Write-Host "Removing Ollama files"
 Remove-Item $OllamaInstallDir -Recurse -Force
 
-# Cleanup
-Remove-Item nssm-2.24.zip -Force
-Remove-Item nssm-2.24\ -Recurse -Force
 
