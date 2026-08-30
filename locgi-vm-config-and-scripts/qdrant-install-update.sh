@@ -50,7 +50,7 @@ docker stop qdrant
 docker remove qdrant
 docker run -d -it --name qdrant -p 6333:6333 -p 6334:6334 --restart=always \
   -e QDRANT__SERVICE__API_KEY=$QDRANT__SERVICE__API_KEY \
-  -v ./qdrant_storage:/data \
+  -v qdrant_storage:/data \
   qdrant/qdrant
 
 docker ps
